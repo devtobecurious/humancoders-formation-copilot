@@ -130,3 +130,19 @@ Tous les messages de commit doivent suivre le format **Conventional Commits** :
 - Privilégier les patterns asynchrones (async/await)
 - Respecter les principes SOLID
 - Appliquer le style Minimal API pour les endpoints
+
+
+-- Feature creation workflow 
+
+When creating a new feature, follow this structured workflow:
+
+Ask for feature title
+Ask for feature content/description
+Ask for expected outcomes
+Ask for acceptance criteria IMPORTANT: Always validate the object structure before proceeding
+Create dedicated branch for the feature (wait for approval)
+List all planned steps in .steps.md file
+Make conventional commits at each step completion
+Complete code review after all steps IMPORTANT: Iterate until code builds and is CLEAN
+Ensure code is functional and clean
+Wait for approval before merging to main branch
