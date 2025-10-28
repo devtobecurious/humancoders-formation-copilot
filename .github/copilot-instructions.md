@@ -75,7 +75,56 @@ Utilisateur : "go"
 Copilot : [Exécute la création]
 ```
 
-## 📋 Règles Supplémentaires
+## � Conventions de Commit
+
+Tous les messages de commit doivent suivre le format **Conventional Commits** :
+
+### Format
+
+```
+<type>: <description en anglais>
+```
+
+### Types principaux
+
+- **feat:** Nouvelle fonctionnalité
+  ```
+  feat: add player authentication system
+  feat: implement score calculation algorithm
+  ```
+
+- **chore:** Tâches techniques (configuration, dépendances, etc.)
+  ```
+  chore: update NuGet packages
+  chore: configure logging middleware
+  ```
+
+- **fix:** Correction de bug
+  ```
+  fix: resolve null reference in GameSession
+  ```
+
+- **docs:** Documentation
+  ```
+  docs: update API documentation
+  ```
+
+- **refactor:** Refactorisation du code
+  ```
+  refactor: simplify score calculation logic
+  ```
+
+- **test:** Ajout ou modification de tests
+  ```
+  test: add unit tests for PlayerRepository
+  ```
+
+- **style:** Formatage du code (sans changement fonctionnel)
+  ```
+  style: apply consistent indentation
+  ```
+
+## �📋 Règles Supplémentaires
 
 - Utiliser les conventions C# (.NET 9.0) pour ce projet
 - Privilégier les patterns asynchrones (async/await)
