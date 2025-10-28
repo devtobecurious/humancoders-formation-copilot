@@ -14,3 +14,41 @@ Content-Type: application/json
 }
 
 ###
+
+# Create a Magic game session - Standard format
+POST {{MinimalApi_HostAddress}}/magic-sessions
+Content-Type: application/json
+
+{
+  "name": "Friday Night Magic",
+  "format": "Standard",
+  "numberOfPlayers": 8,
+  "startingLifePoints": 20
+}
+
+###
+
+# Create a Magic game session - Commander format
+POST {{MinimalApi_HostAddress}}/magic-sessions
+Content-Type: application/json
+
+{
+  "name": "Commander Tournament",
+  "format": "Commander",
+  "numberOfPlayers": 4,
+  "startingLifePoints": 40
+}
+
+###
+
+# Get all Magic game sessions
+GET {{MinimalApi_HostAddress}}/magic-sessions
+Accept: application/json
+
+###
+
+# Get a specific Magic game session by ID (replace with actual GUID)
+GET {{MinimalApi_HostAddress}}/magic-sessions/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+###
